@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://localhost:8080/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Movies Engine</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="search-div">
+            <input type="text" placeholder="Enter Movie name:">
+            <span class="fas fa-search fa-2x" id="search"></span>
+        </div>
+
+        <div id="movies"></div>
+    </div>
+
+    <script id="movie-handlebar" type="text/x-handlebars-template">
+        {{#each movies}}
+        <div data-id="{{id}}" class="movie">
+            <h3>{{title}}</h3>
+            <img src="{{poster}}" alt="{{title}}">
+            <p><b>Year: {{year}}</b></p>
+        </div>
+        {{/each}}
+    </script>
+    
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/handlebars//dist/handlebars.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
