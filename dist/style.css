@@ -3,7 +3,7 @@ body {
 }
 #container {
     font-size: 2rem;
-    background-color: #3D3B8E;
+    background-color: green;
     color: white;
     min-height: 100vh;
     padding: 2% 0 5% 0;
@@ -17,7 +17,7 @@ body {
 }
 
 #search-div > input {
-    background-color: #e5e5f4;
+    background-color: yellow;
     color: #3D3B8E;
     font-size: large;
     padding-left: 2%;
